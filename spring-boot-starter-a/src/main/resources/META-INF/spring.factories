@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=starters.jebl01.alpha.autoconfigure.AlphaAutoConfiguration

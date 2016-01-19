@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=jebl01.beta.autoconfigure.BetaAutoConfiguration
