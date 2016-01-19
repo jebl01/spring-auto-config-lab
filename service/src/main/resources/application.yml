@@ -1,0 +1,9 @@
+debug: true
+alpha:
+  host: localhost
+  port: 1234
+beta:
+  host: localhost
+  port: 4321
+server:
+  port: 8088
