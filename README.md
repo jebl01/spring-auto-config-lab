@@ -11,14 +11,14 @@ The intention of the two starter projects is that when added as dependencies to 
 ## The Service
 The service is a fairly basic Spring boot application where the application main class is in a package called `jebl01` (**note! this is the root package of starter-b**). The service has **starter-a** and **starter-b** as dependencies.
 
-## Run!
+## The Run!
 - `mvn clean install` on the root to install the *starter* projects
 - start the service: `cd service && mvn spring-boot:run`
 
-### Expected result
+### The Expected result
 The service should pick up the auto configuration from both **starter-a** and **starter-b**
 
-### Actual result
+### The Actual result
 Only the auto configuration from **starter-a** is picked up. For **starter-b** the `ConditionalOnBean` condition fails.
 
 Debug output (abbrevated for readability):
@@ -45,5 +45,5 @@ Negative matches:
       - @ConditionalOnBean (types: com.codahale.metrics.MetricRegistry; SearchStrategy: all) found no beans (OnBeanCondition)
 ```
 
-#WAT!!
+#The WAT!!
 So, an auto configure project can't use the same packages as the service using it?! Packet scanning gone wild?
